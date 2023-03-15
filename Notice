@@ -6,4 +6,5 @@
 - Push le tout sur le remote
 - Le reste de l'équipe clone de repository sur son local
 - Chacun crée sa branche et fait ses push dessus.
-
+  Attention à bien faire communiquer le local avec le distant dans le bon dossier
+  avec git init.
