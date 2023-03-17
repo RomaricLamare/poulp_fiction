@@ -1,0 +1,77 @@
+* {
+    color: var(--color-nav-text)
+}
+
+h2 {
+    font-family: var(--font-main);
+    color: var(--color-nav-text);
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+}
+
+.genres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+    height: 100%;
+    justify-content: space-around;
+    
+}
+
+h3 {
+    
+}
+
+.aventure {
+    background: center center / cover url("img/aventure.jpg");
+    display: flex;
+    border-style:solid;
+    border-radius: 20px;
+    align-items: center;
+    padding: 50px;
+    height: 27%;
+    width: 78%;
+    font-size: 4rem;
+    font-family: var(--font-main);
+    justify-content: space-around;
+}
+
+.sf {
+    background: center center / cover url("img/sf.jpg");
+    color: var(--color-secondary-text);
+    display: flex;
+    border-style:solid;
+    border-radius: 20px;
+    align-items: center;
+    padding: 50px;
+    height: 27%;
+    width: 78%;
+    font-size: 4rem;
+    font-family: var(--font-main);
+    justify-content: space-around;
+}
+
+.fantasy{
+    background: center center / cover url("img/fantasy.jpg");
+    display: flex;
+    border-style:solid;
+    border-radius: 20px;
+    align-items: center;
+    padding: 50px;
+    height: 27%;
+    width: 78%;
+    font-size: 4rem;
+    font-family: var(--font-main);
+    justify-content: space-around;
+}
+
+body {
+    height: 100vh;
+}
