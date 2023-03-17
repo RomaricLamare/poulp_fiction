@@ -4,9 +4,9 @@
 
 :root {
     --color-nav-text: #401701;
-    --color-secondary-text: #FEFFCD;
+    --color-secondary-text:burlywood;
     --font-main: Bree Serif, serif;
-    --font-secondary:
+    --font-secondary: Oxygen, sans-serif;
 }
 
 * {
@@ -17,9 +17,24 @@
     text-decoration: none;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main{
+    flex:1;
+    margin-bottom: 10px;
+}
+
 nav {
     display: flex;
-    background: center center / cover url("./img/paper.jpg");
+    background-color: var(--color-secondary-text);
     height: 85px;
     justify-content: space-around;
 }
@@ -68,6 +83,11 @@ nav a:hover {
     opacity: .7;
 }
 
+.hero{
+    background: center center / cover url("./img/hero.jpg");
+    height: 80vh;
+}
+
 .logo {
     position: absolute;
     top: 12px;
@@ -82,20 +102,9 @@ nav a:hover {
     opacity: .7;
 }
 
-.hero {
-    display: flex;
-    background: center center / cover url("./img/Background_main.jpg");
-    height: 85vh;
-}
-
-main {
-    display: none;
-}
-
 footer {
-    position: absolute;
-    bottom: 0;
-    background: center center / cover url("./img/paper.jpg");
+   
+    background-color: var(--color-secondary-text);
     height: 50px;
     width: 100%;
 }
