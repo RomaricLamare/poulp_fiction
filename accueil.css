@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    background: center center / cover url("./assets/img/Background_main.jpg");
+    height: 85vh;
+}
+
+h2 {
+    font-family: var(--font-main);
+    color: var(--color-nav-text);
+    text-transform:uppercase;
+    font-weight: bold;
+    margin:50px;
+}
+
+p {
+    font-family: var(--font-secondary);
+    color:var(--color-nav-text);
+    margin:50px;
+    max-width: 65ch;
+    line-height: 1.5em;
+}
+
+.slide-box{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin:50px;
+}
+
+.box1 {
+    display:flex;
+    border-radius: 15px;
+}
+
+.box2 {
+    margin:50px;
+    background-color: var(--color-secondary-text);
+    border-radius: 15px;
+}
