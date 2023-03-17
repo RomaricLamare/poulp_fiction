@@ -4,7 +4,7 @@
 
 :root {
     --color-nav-text: #401701;
-    --color-secondary-text:burlywood;
+    --color-secondary-text: burlywood;
     --font-main: Bree Serif, serif;
     --font-secondary: Oxygen, sans-serif;
 }
@@ -81,11 +81,6 @@ nav a:hover::after {
 
 nav a:hover {
     opacity: .7;
-}
-
-.hero{
-    background: center center / cover url("./img/hero.jpg");
-    height: 80vh;
 }
 
 .logo {
