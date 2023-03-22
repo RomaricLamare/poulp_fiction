@@ -16,7 +16,7 @@ form {
     margin:10%;
   
     height: 50%;
-    background: center center / cover url("./img/paper.jpg");
+    background: var(--color-secondary-text);
     padding: 30px;
     border-radius: 5px;
 }
@@ -74,7 +74,7 @@ form .corps-formulaire .droite .groupe {
 form .corps-formulaire .droite textarea {
     margin-top: 5px;
     padding: 10px;
-    background-color: #DCDCDC;
+    background-color: #FFF5e9;
     border: 2px solid var(--color-nav-text);
     outline: none;
     border-radius: 5px;

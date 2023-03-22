@@ -1,7 +1,9 @@
 .hero {
-    display: flex;
-    background: center center / cover url("./assets/img/Background_main.jpg");
-    height: 85vh;
+    background-image: url('assets/img/Background_main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
 }
 
 h2 {
@@ -9,31 +11,56 @@ h2 {
     color: var(--color-nav-text);
     text-transform:uppercase;
     font-weight: bold;
-    margin:50px;
+    margin-bottom : 20px;
 }
 
 p {
     font-family: var(--font-secondary);
     color:var(--color-nav-text);
-    margin:50px;
-    max-width: 65ch;
-    line-height: 1.5em;
+    line-height: 1.5em;   
 }
 
 .slide-box{
     display:flex;
     justify-content:center;
     align-items: center;
-    margin:50px;
+    width: 100%;
+    padding: 40px;   
 }
 
 .box1 {
-    display:flex;
     border-radius: 15px;
+    overflow: hidden;  
+    margin-right:5%;
 }
 
 .box2 {
-    margin:50px;
     background-color: var(--color-secondary-text);
     border-radius: 15px;
+    flex : 0.5;
+    padding: 20px;
+}
+
+@media screen and (min-width:360px) and (max-width: 1200px){
+    .hero{
+        background: no-repeat cover url("assets/img/Background_main.jpg") ;
+        background-position:center;
+    }
+    .slide-box {
+        flex-direction: column-reverse;
+        gap: 20px;
+        
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .box2 {
+        width: 100%;
+    }
+    .box1 img {
+        width: 100%;
+    }
+    
 }
