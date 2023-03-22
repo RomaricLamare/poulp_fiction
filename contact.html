@@ -22,6 +22,7 @@
         <nav>
             <ul>
                 <li><a href="accueil.html"> ACCUEIL </a></li>
+                <li><a href="laBoutique.html"> LA LIBRARIE </a></li>
                 <li><a href="laBoutique.html"> LA LIBRAIRIE </a></li>
                 <li><a href="genres.html"> GENRES </a></li>
                 <li><a href="evenements.html"> ÉVÈNEMENTS </a></li>
@@ -31,28 +32,56 @@
 
     </header>
     <main>
+     <div class = "hautgauche">
+      <div class="aPropos"><br/>
+       <h1>Librairie Poulp’Fiction</h1><br/><br/>
+       <h2> Adresse<br/></h2>
+
+       <p>  4 Rue Baron,
+
+          44000 NANTES.<br/><br/></p>
+    
+        <h2> Horaires d'ouverture<br/></h2>
+         <p> Du mardi au samedi de 10h à 19h<br/></br></p>
+      
+         <h2> Contact</h2>
+        <p>+33 2 40 89 30 72</p></div></div> 
 
 
-        <form>
+    <div class = "hautdroite">
+        <form id="form">
 
             <h1>CONTACTEZ-NOUS</h1>
             <div class="separation"></div>
             <div class="corps-formulaire">
                 <div class="gauche">
                     <div class="groupe">
-                        <label>Votre prenom</label>
-                        <input type="text">
+                        <label >Votre prenom</label>
+                        <input 
+                        type="text"
+                        placeholder = "John"
+                        id="prenom"
+                        value=""
+                        />
                         <i class="fa-solid fa-user-astronaut"></i>
                     </div>
                     <div class="groupe">
                         <label>Votre adresse e-mail</label>
-                        <input type="text">
+                        <input 
+                        type="text"
+                        placeholder = "JohnDoe@gmail.com"
+                        id="mail"
+                        value=""/>
 
                         <i class="fa-regular fa-envelope"></i>
                     </div>
                     <div class="groupe">
                         <label>Votre telephone</label>
-                        <input type="text">
+                        <input 
+                        type="text"
+                        placeholder = "00-00-00-00-00"
+                        id="telephone"
+                        value=""/>
                         <i class="fa-solid fa-mobile-retro"></i>
 
 
@@ -62,25 +91,34 @@
                 <div class="droite">
                     <div class="groupe">
                         <label>Message</label>
-                        <textarea></textarea>
+                        
+                        <textarea
+                        placeholder ="Ecrire votre message ici" 
+                        id="messageecrit"
+                        value=""></textarea>
                     </div>
 
                 </div>
             </div>
             <div class="pied-formulaire" align="center">
-                <button>Envoyer le message </button>
+
+                <div class ="button_container">                                                 <!-- JavaScript pour popup-->
+              <button type="submit" id="button_modal" onclick="openModal()">Envoyer le message </button>      <!-- JavaScript pour popup-->
             </div>
+            <div id="modal"><div>
+                <h4 class= "mister">Poulp'fiction Bonjour !</h4>
+                 <h5 class="byemister">Merci de votre visite !</h5>
+                <button id="close" oneclick="closeModal()">Close me please</button>
+            </div></div>
+            </div>
+                <!-- Rajouter info dans popup-->
         </form>
-
-
-
-
-
-
-
-
-
+    </div>
     </main>
+    <div class= "carte">
+       
+    <iframe  src="https://www.google.com/maps/d/u/0/embed?mid=1Xo4qVr_f2faBUlF9gtNF7Hi33nL0wqM&ehbc=2E312F" width="680" height="500"></iframe>
+   </div>
     <footer>
         <div class="title-small"><img src="./assets/img/title_small.png" alt="logo de la boutique"></div>
         <ul class="social">
@@ -89,6 +127,7 @@
             <li><a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/youtube.png"></a></li>
         </ul>
     </footer>
-</body>
+    <script src="./assets/contact.js" type="text/javascript"></script>  <!-- JavaScript pour popup-->
+        </body>
 
 </html>
