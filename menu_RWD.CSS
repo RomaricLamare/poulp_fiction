@@ -1,0 +1,98 @@
+/*________Small device________*/
+@media screen and (max-width: 900px) {
+  .navbar_links {
+    display: none;
+    flex-direction: column;
+    width: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary-text);
+  }
+  nav li {
+    width: 100vw;
+    justify-content: center;
+    padding: 12px 0px;
+  }
+  li:hover {
+    font-size: 1.7rem;
+  }
+  .navbar_links a {
+    color: var(--color-nav-text);
+  }
+  .show-nav .navbar_links {
+    width: 100%;
+    display: flex;
+  }
+  .show-title {
+    display: none;
+  }
+  .burger {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .logo_poulp {
+    padding-left: 8px;
+  }
+
+  a {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bar {
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: var(--color-nav-text);
+    border-radius: 10px;
+    position: relative;
+  }
+
+  /*Permet d'effacer la barre centrale pour l'animation de translation des deux autres en croix*/
+  .show-nav .bar {
+    width: 0px;
+    background: transparent;
+    transition: 0.04s ease-in-out;
+  }
+
+  .bar::before,
+  .bar::after {
+    /* before et after dans le flow html, sert a crer une forme et styliser une div vide en gros...*/
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bar::before {
+    transform: translateY(-14px);
+  }
+
+  .show-nav .bar::before {
+    transform: rotate(45deg);
+  }
+  .bar::after {
+    transform: translateY(14px);
+  }
+
+  .show-nav .bar::after {
+    transform: rotate(-45deg);
+  }
+}
