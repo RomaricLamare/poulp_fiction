@@ -31,7 +31,9 @@ body {
 
 main {
     flex:1;
-    margin-bottom: px;
+
+    margin-bottom: 10px;
+    
 }
 
 nav {

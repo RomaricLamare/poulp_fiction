@@ -1,37 +1,94 @@
-body{
-    display: flex;
+:root {
+    --color-nav-text: #401701;
+    --color-secondary-text: burlywood;
+    --font-main: Bree Serif, serif;
+    --font-secondary: Oxygen, sans-serif;
+    --color-font: #FFFAF4;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-font);
+}
+
+label {
+    font-family: var(--color-nav-text)
+}
+
 main {
-    height: 100%;
+    display: flex;
     width: 100%;
-   display: flex;
-   justify-content: center;
+    height: 100%;
+    align-items: center;
+    flex-direction: center;
+    
+}
+
+.aPropos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin:10%;
+  
   
 }
-label{
-    font-family: var(--font-secondary);
+
+p {
+    margin: 10px;
+}
+
+h1 {
+    margin-left: 5px;
+    margin-bottom: 15px;
+
+}
+
+h2 {
+    margin: 10px;
+}
+
+.hautgauche {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.hautdroite {
+    display: flex;
+    width: 90%;
+    margin-right: 10%;;
+
 }
 
 form {
-    margin:10%;
-  
+    margin: 5%;
+    width: 80%;
     height: 50%;
-    background: var(--color-secondary-text);
-    padding: 30px;
+    background-color: var(--color-secondary-text);
+    padding: 2%;
     border-radius: 5px;
 }
 
 form h1 {
     font-size: 24px;
     font-family: var(--font-main)
-
 }
 
 .separation {
 
     width: 100%;
     height: 1px;
-    background-color: var(--color-nav-text)
+    background-color: var(--color-nav-text);
 }
 
 .corps-formulaire {
@@ -60,7 +117,7 @@ form .corps-formulaire .gauche .groupe i {
     left: 0px;
     top: 25px;
     padding: 9px 8px;
-    color :var(--color-nav-text);
+    color: var(--color-nav-text);
 }
 
 form .corps-formulaire .droite {
@@ -69,12 +126,13 @@ form .corps-formulaire .droite {
 
 form .corps-formulaire .droite .groupe {
     height: 100%;
+    
 }
 
 form .corps-formulaire .droite textarea {
     margin-top: 5px;
     padding: 10px;
-    background-color: #FFF5e9;
+    background-color: var(--color-font);
     border: 2px solid var(--color-nav-text);
     outline: none;
     border-radius: 5px;
@@ -83,19 +141,121 @@ form .corps-formulaire .droite textarea {
 
 }
 
-form .pied-formulaire button{
+form .pied-formulaire button {
     margin-top: 10px;
     background-color: var(--color-nav-text);
-    color:var(--color-secondary-text);
+    color: var(--color-secondary-text);
     font-size: 16px;
-    border:none;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    outline:none;
+    outline: none;
     cursor: pointer;
 
 }
 
-form .pied-formulaire button:hover{
+form .pied-formulaire button:hover {
     transform: scale(1.05);
+}
+
+.carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#modal {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    background-color: var(--color-nav-text);
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: -3000px;
+    left: 40%;
+    color: var(--color-secondary-text);
+
+
+
+}
+
+h5 {
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+
+}
+
+h6 {
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+
+}
+/* @media screen and (max-width :600px) {
+    .aPropos {
+        width: 100%;
+        font-size:90% ;
+    display:flex;
+    justify-content: center;
+ 
+    }
+    
+p {
+    margin: 0px;
+}
+
+h1 {
+    
+    margin-bottom: 20px;
+
+}
+
+h2 {
+    margin: 0px;
+}
+    
+.hautgauche {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.hautdroite {
+    display: flex;
+    width: 60%;
+    margin-right: 10%;;
+}
+    
+form .corps-formulaire .droite {
+    margin-left: 0px;
+    width: 80%;
+}
+
+form {
+    font-size: 80%;
+    width: 100%;
+
+}
+
+.corps-formulaire {
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.button_container{
+    width: 50%;
+  
+}
+#button_modal {
+    font-size: 10px;
+} */
 }
