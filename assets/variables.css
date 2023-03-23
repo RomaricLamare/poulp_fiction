@@ -17,17 +17,21 @@
   text-decoration: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+html{
+    height: 100%;
+    width: 100vw;
 }
 
-
+body {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+}
 
 main {
-  flex: 1;
-  margin-bottom: 10px;
+    flex:1;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -102,8 +106,8 @@ footer {
 }
 
 .title-small {
-  position: absolute;
-  margin: 5px 0px 5px 10px;
+    position: absolute;
+    margin: 0px 0px 5px 10px;
 }
 
 .social {
