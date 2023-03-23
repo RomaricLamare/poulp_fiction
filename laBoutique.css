@@ -28,6 +28,9 @@
   background-color: var(--color-secondary-text);
   margin: 50px;
 }
+body {
+  background: center center / cover url("assets/img/Tentacule.jpg") #fff5e9;
+}
 
 h1 {
   margin: 50px;

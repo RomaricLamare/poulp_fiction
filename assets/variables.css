@@ -19,16 +19,19 @@
 
 html{
     height: 100%;
+    width: 100vw;
 }
 
-body{
+body {
     display:flex;
     flex-direction: column;
     height: 100%;
+    width: 100vw;
 }
 
-main{
+main {
     flex:1;
+
     margin-bottom: 10px;
     
 }
