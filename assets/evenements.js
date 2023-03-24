@@ -11,12 +11,6 @@ const close1 = document.querySelector(".close");
 const close2 = document.querySelector(".close2");
 const close3 = document.querySelector(".close3");
 
-/*clickSlide.addEventListener("click", function(){
-    overlay.classList.toggle("overlay-off");
-    overlay.classList.toggle("overlay");
-});*/
-
-
 const clickSlideFunction = (listener, layer) => listener.addEventListener("click", function() {
     layer.classList.toggle(layer.className);
     layer.classList.toggle("overlay");
