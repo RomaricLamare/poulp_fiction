@@ -18,7 +18,7 @@ main {
     height: 100%;
     width: 100%;
     justify-content: space-around;
-    
+    gap: 15px;
 }
 
 .aventure {
@@ -28,7 +28,9 @@ main {
     border-radius: 20px;
     height: 27%;
     width: 60%;
-    
+    min-height: 100px;
+    font-size: clamp(12px, 3.5vw, 70px);
+    font-family: var(--font-main);
     position: relative;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -62,9 +64,11 @@ h3 {
     height: 100%;
 }
 
-.button, .button2, .button3 {
+.button, .button3 {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-secondary);
+    color: var(--color-secondary-text); 
     font-size: small;
     justify-content: center;
     align-items: center;
@@ -72,9 +76,41 @@ h3 {
     align-self: flex-end;
     border-top-style: solid;
     width: 100%;
-    background-color: rgba(240, 248, 255, 0.233);
+    height : 15%;
+    background-color: #414141bd;;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.button2 {
+    var(--color-secondary-text);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-secondary); 
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    align-self: flex-end;
+    border-top-style: solid;
+    width: 100%;
+    height: 15%;
+    background-color: #414141b0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button:hover, .button:focus, .button:active, 
+.button2:hover, .button2:focus, .button2:active, 
+.button3:hover, .button3:focus, .button3:active {
+    -webkit-animation-name: pop;
+    animation-name: pop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    font-weight: bold;
+  }
 
 .sf {
     background: center center / cover url("img/sf.jpg");
@@ -84,6 +120,7 @@ h3 {
     align-items: center;
     height: 27%;
     width: 60%;
+    min-height: 100px;
     font-size: clamp(12px, 3.5vw, 70px);
     font-family: var(--font-main);
     justify-content: space-around;
@@ -102,6 +139,7 @@ border-radius: 20px;
 align-items: center;
 height: 27%;
 width: 60%;
+min-height: 100px;
 font-size: clamp(12px, 3.5vw, 70px);
 font-family: var(--font-main);
 justify-content: space-around;
@@ -114,6 +152,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 body {
     height: 100vh;
+    background: center center / cover url("img/BG-tentacles.png") #fff5e9;
 }
 
 .pochette {
@@ -132,12 +171,9 @@ display: flex;
 align-items: center;
 }
 
-
-
 .button:hover,
 .button2:hover,
 .button3:hover {
-    color: #FFFAF4;
     cursor: pointer;
 }
 
@@ -154,7 +190,6 @@ align-items: center;
     transition: 0.6s;
     overflow: hidden;
     font-family: var(--font-secondary);
-    
 }
 .overlay{
     opacity:1;
@@ -262,4 +297,20 @@ z-index: 3;
         width: 90%;
     }
     
+}
+
+@media screen and (max-height : 477px) {
+    .genres{
+        gap: 10px;
+        overflow: scroll;
+    }
+
+    .aventure{
+        margin-top: 22%;
+    }
+
+    main {
+        
+    }
+
 }

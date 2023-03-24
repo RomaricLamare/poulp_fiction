@@ -7,4 +7,4 @@ function toggleMenu() {
 }
 toggleMenu();
 console.log(navbar);
-console.log()
+console.log();
