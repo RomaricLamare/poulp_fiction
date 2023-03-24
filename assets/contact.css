@@ -348,16 +348,17 @@ h6 {
         display: flex;
         justify-content: center;
         height: 10%;
-padding-top: 20px;
-padding-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
 
 
 
     }
+
     footer {
         position: relative;
-        bottom: 0;
+       
         background-color: var(--color-secondary-text);
         height: 50px;
         width: 100%;
@@ -412,7 +413,7 @@ padding-bottom: 20px;
         padding-right: 15px;
         width: 65%;
         height: 80%;
-        margin-bottom: 30px;
+      
 
 
 
@@ -437,16 +438,18 @@ padding-bottom: 20px;
         height: 10%;
 
     }
-.footer{
-    position: relative;
-}
+
+    footer {
+        position: relative;
+    }
+
     .carte {
         display: flex;
         justify-content: center;
         margin-top: 0px;
         height: 10%;
         padding-top: 20px;
-margin-bottom: 20px;
+        margin-bottom: 20px;
 
     }
 
