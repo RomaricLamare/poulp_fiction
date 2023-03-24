@@ -45,7 +45,7 @@ p {
 .descriptionLibrairie {
   width: 50%;
   max-width: 80vh;
-  min-width: 40vh;
+  min-width: 32vh;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
@@ -58,6 +58,7 @@ p {
   display: flex;
   width: 600px;
   height: 500px;
+  min-width: 60%;
   border-radius: 15px;
   background: center center / cover url("assets/img/Photo_laBoutique.png");
   background-repeat: no-repeat;
