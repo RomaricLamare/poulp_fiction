@@ -1,40 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poulp Fiction</title>
-    <link rel="stylesheet" href="assets/variables.css">
-    <script src="assets/script.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poulp' Fiction</title>
+    <link rel="stylesheet" href="assets/variables.css" />
+    <link rel="stylesheet" href="accueil.css" />
+    <!--Ajouter icone du site-->
+  </head>
+  <body>
+    <!--__________________________NAVIGATION___________________________-->
     <header>
-        <div class="logo"><a href="accueil.html"><img src="./assets/img/logo_light.png" alt="logo poulpe"
-                    height="60px"></a></div>
-        <nav>
-            <ul>
+        <div class="logo">
+            <a href="accueil.html">
+                <img src="./assets/img/logo_light.png" alt="logo poulpe" height="60">
+            </a>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar_links">
                 <li><a href="accueil.html"> ACCUEIL </a></li>
-                <li><a href="laBoutique.html"> LA BOUTIQUE </a></li>
+                <li><a href="laBoutique.html"> LA LIBRAIRIE </a></li>
                 <li><a href="genres.html"> GENRES </a></li>
-                <li><a href="évènements.html"> ÉVÈNEMENTS </a></li>
+                <li><a href="evenements.html"> ÉVÈNEMENTS </a></li>
                 <li><a href="contact.html"> CONTACT </a></li>
             </ul>
+          <button class="burger">
+            <span class="bar"></span>
+          </button>
         </nav>
-        <div class="hero"></div>
     </header>
     <main>
-        <h2>Paul, libraire et passionné de livres</h2>
-        <p>Ma boutique, Poulp Fiction, rassemble plus de 400 ouvrages sur la thématique Fantastique : Science-Fiction,
-            Aventure, Fantasy... Venez chercher des conseils de lecture et flâner au gré de vos envies.</p>
+      <div class="hero"></div>
+      <section class="slide-box">
+        <div class="box1">
+          <img src="assets/img/Paul.jpg" alt="Paul le vendeur" />
+        </div>
+        <div class="box2">
+          <h2>Paul, libraire et passionné de livres</h2>
+          <p>
+            Bienvenue dans notre librairie dédiée à la science-fiction, la
+            fantasy et l'aventure ! Nous sommes fiers de vous proposer une
+            sélection exceptionnelle de romans et de bandes dessinées pour les
+            amateurs de ces genres passionnants. <br /><br />
+            Vous trouverez ici des univers futuristes peuplés de technologies
+            incroyables, des mondes fantastiques où les créatures les plus
+            étranges côtoient les héros les plus courageux, et des voyages
+            incroyables vers des contrées lointaines et dangereuses.
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="title-small"><img src="./assets/img/title_small.png" alt="logo de la boutique"></div>
-        <ul class="social">
-            <li><a href="https://fr-fr.facebook.com/" target="_blank"><img src="./assets/img/facebook.png"></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagram.png"></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/youtube.png"></a></li>
-        </ul>
+      <div class="title-small">
+        <img src="./assets/img/title_small.png" alt="logo de la boutique" />
+      </div>
+      <ul class="social">
+        <li>
+          <a href="https://fr-fr.facebook.com/"
+            ><img src="./assets/img/facebook.png" alt="facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"
+            ><img src="./assets/img/instagram.png" alt="instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/"
+            ><img src="./assets/img/youtube.png" alt="youtube"
+          /></a>
+        </li>
+      </ul>
     </footer>
-</body>
+    <script src="assets/Menu_RWD.js"></script>
+  </body>
 </html>
