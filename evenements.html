@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poulp Fiction</title>
-    <link rel="stylesheet" href="assets/variables.css">
-    <link rel="stylesheet" href="assets/evenements.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poulp' Fiction</title>
+    <link rel="stylesheet" href="assets/variables.css" />
+    <link rel="stylesheet" href="assets/evenements.css" />
+    <!--Ajouter icone du site-->
+  </head>
+  <body>
+    <!--__________________________NAVIGATION___________________________-->
     <header>
-        <div class="logo"><a href="accueil.html"><img src="./assets/img/logo_light.png" alt="logo poulpe"
-                    height="60px"></a></div>
-        <nav>
-            <ul>
-                <li><a href="accueil.html"> ACCUEIL </a></li>
-                <li><a href="laBoutique.html"> LA LIBRAIRIE </a></li>
-                <li><a href="genres.html"> GENRES </a></li>
-                <li><a href="evenements.html"> ÉVÈNEMENTS </a></li>
-                <li><a href="contact.html"> CONTACT </a></li>
-            </ul>
-        </nav>
-        <div class="hero"></div>
+      <div class="logo ">  <!--show nav pour montrer le menu déroulant quand on clique sur burger-->
+        <a href="accueil.html"><img
+        src="./assets/img/logo_light.png"
+        alt="logo poulpe"
+        height="60px"
+        class="logo_poulp"
+        /></a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar_links">
+          <li><a href="accueil.html"> ACCUEIL </a></li>
+          <li><a href="laBoutique.html"> LA LIBRAIRIE </a></li>
+          <li><a href="genres.html"> GENRES </a></li>
+          <li><a href="evenements.html"> ÉVÈNEMENTS </a></li>
+          <li><a href="contact.html"> CONTACT </a></li>
+        </ul>
+        
+      <!--______________MENU BURGER_______________-->
+<button class="burger">
+  <span class="bar"></span>
+  </button>
+
+      </nav>
     </header>
     <main>
         <div class="container">
@@ -81,7 +94,8 @@
             <li><a href="https://www.youtube.com/" target="_blank"><img src="./assets/img/youtube.png"></a></li>
         </ul>
     </footer>
-    <script src="assets/script.js"></script>
     <script src="assets/evenements.js"></script>
+    <script src="assets/Menu_RWD.js"></script>
+
 </body>
 </html>
