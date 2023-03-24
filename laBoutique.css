@@ -59,6 +59,7 @@ p {
   width: 600px;
   height: 500px;
   min-width: 60%;
+  min-height: 150px;
   border-radius: 15px;
   background: center center / cover url("assets/img/Photo_laBoutique.png");
   background-repeat: no-repeat;
