@@ -2,6 +2,18 @@ main {
   background: center center / cover url("assets/img/BG-tentacles.png");
 }
 
+/*TEXTE*/
+.descriptionLibrairie {
+  width: 50%;
+  max-width: 80vh;
+  min-width: 40vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  line-height: 1.5;
+  background-color: var(--color-secondary-text);
+  padding: 25px;
+}
 body {
   background-repeat: no-repeat;
 }

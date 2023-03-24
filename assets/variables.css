@@ -6,7 +6,7 @@
   --color-secondary-text: burlywood;
   --font-main: Bree Serif, serif;
   --font-secondary: Oxygen, sans-serif;
-  --font-size: 1rem; /*supprimer si pose problème*/
+  --font-size:1rem;
 }
 
 * {
@@ -31,7 +31,6 @@ body {
 
 main {
   flex: 1;
-  /* margin-bottom: 10px; */
 }
 
 nav {
@@ -104,8 +103,10 @@ footer {
 }
 
 .title-small {
-  position: absolute;
-  margin: 0px 0px 5px 10px;
+  display: flex;
+  height: 2.5em;
+    position: absolute;
+    margin: 5px 0px 5px 10px;
 }
 
 .social {
