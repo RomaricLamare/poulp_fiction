@@ -29,6 +29,7 @@ main {
   background-color: var(--color-secondary-text);
   padding: 20px;
 }
+
 body {
   background: center center / cover url("assets/img/Tentacule.jpg") #fff5e9;
 }
